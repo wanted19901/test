@@ -1,0 +1,8 @@
+.item {
+    height: 80vh;
+
+}
+img {
+    width: auto; /* ширина картинки */
+    height: auto; /* высота картинки */
+}
