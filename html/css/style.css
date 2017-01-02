@@ -1,8 +1,7 @@
 .item {
-    height: 80vh;
-
+    height: 250px;
 }
-img {
-    width: auto; /* ширина картинки */
-    height: auto; /* высота картинки */
+.carousel-slide {
+    height: 300px ;
+
 }
