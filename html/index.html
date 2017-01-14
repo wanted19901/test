@@ -147,33 +147,34 @@
             <div class="col-sm-4 col-sm-offset-0 col-xs-offset-0 col-md-offset-0 col-md-4 col-xs-4">
                 <div class="row">
 
-                        <div class="btn-group dropdown">
-                            <button class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-list"></i> ВЫпадающее меню <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">ССыqwлка</a></li>
-                                <li><a href="#">ССылка</a></li>
-                                <li><a href="#">ССылка</a></li>
-                                <li><a href="#">ССылка</a></li>
-                                <li><a href="#">ССылка</a></li>
-                            </ul>
-                        </div>
+                    <div class="btn-group dropdown">
+                        <button class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-list"></i> ВЫпадающее меню <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">ССыqwлка</a></li>
+                            <li><a href="#">ССылка</a></li>
+                            <li><a href="#">ССылка</a></li>
+                            <li><a href="#">ССылка</a></li>
+                            <li><a href="#">ССылка</a></li>
+                        </ul>
                     </div>
                 </div>
+            </div>
             <div class="col-sm-8 col-sm-offset-0 col-md-8 col-xs-8">
                 <div class="tabs">
                     <ul class="nav nav-tabs">
-                    <li class="active"><a href="#tab-1" data-toggle="tab">Вкладка1</a></li>
-                    <li><a href="#tab-2" data-toggle="tab" >Вкладка2 <i class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>  </a></li>
-                    <li><a href="#tab-3" data-toggle="tab">Вкладка3</a></li>
-                </ul>
+                        <li class="active"><a href="#tab-1" data-toggle="tab">Вкладка1</a></li>
+                        <li><a href="#tab-2" data-toggle="tab">Вкладка2 <i
+                                class="fa fa-spinner fa-pulse fa-1x fa-fw"></i> </a></li>
+                        <li><a href="#tab-3" data-toggle="tab">Вкладка3</a></li>
+                    </ul>
                     <div class="tab-content">
 
                         <div class="tab-pane active  in " id="tab-1">
                             <p>Параграф с ткстом1
                                 <br> <strong>sdfiuj</strong>
-                                <i class="fa fa-linode fa-5x fa-rotate-90 fa-spinner fa-spin"  aria-hidden="true"></i>
+                                <i class="fa fa-linode fa-5x fa-rotate-90 fa-spinner fa-spin" aria-hidden="true"></i>
                                 <br> shdfkiygsdfkugdsfukygsdkjfsdf
                                 sdfsdfsdfskdjhfi34fsdfsdf
                                 sdfskjdhfskygfsudfsdf
@@ -181,7 +182,16 @@
                         </div>
                         <div class="tab-pane fade" id="tab-2">
                             <p>Параграф с ткстом2
-                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                                Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur
+                                non nulla sit amet nisl tempus convallis quis ac lectus. Sed porttitor lectus nibh.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan
+                                id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum
+                                sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                                posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit
+                                amet ligula. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
+                                Pellentesque in ipsum id orci porta dapibus. Curabitur arcu erat, accumsan id imperdiet
+                                et, porttitor at sem.
                             </p>
                         </div>
                         <div class="tab-pane fade" id="tab-3">
@@ -193,21 +203,88 @@
                         </div>
                     </div>
                 </div>
-                 </div>
             </div>
-
-
         </div>
-    </div>
-    <br>
 
-    <br><br>
-    <br><br>
-    <br>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.js"></script>
+
+    </div>
+
+    <form name="calc" action="">
+        <table class="tblCalc" cellpadding=0 cellspacing=0>
+            <tr>
+                <td colspan=5 align=middle>
+                    <input id="editWide" name="ReadOut" type="Text"
+                           size=28 value="0" width="250px">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td><input name="btnClear" type="Button"
+                           value="C" onclick="Clear()"/></td>
+                <td><input name="btnClearEntry" type="Button"
+                           value="CE" onclick="ClearEntry()"/></td>
+            </tr>
+            <tr>
+                <td><input name="btnSeven" type="Button"
+                           value="7" onclick="NumPressed(7)"></td>
+                <td><input name="btnEight" type="Button"
+                           value="8" onclick="NumPressed(8)"></td>
+                <td><input name="btnNine" type="Button"
+                           value="9" onclick="NumPressed(9)"></td>
+                <td><input name="btnPlus" type="Button"
+                           value="+" onclick="Operation('+')"/></td>
+                <td><input name="btnMultiply" type="Button"
+                           value="*" onclick="Operation('*')"/></td>
+
+            </tr>
+            <tr>
+                <td><input name="btnFour" type="Button"
+                           value="4" onclick="NumPressed(4)"></td>
+                <td><input name="btnFive" type="Button"
+                           value="5" onclick="NumPressed(5)"></td>
+                <td><input name="btnSix" type="Button"
+                           value="6" onclick="NumPressed(6)"></td>
+                <td><input name="btnMinus" type="Button"
+                           value="-" onclick="Operation('-')"/></td>
+                <td align=middle><input name="btnDivide" type="Button"
+                                        value=" / " onclick="Operation('/')"/></td>
+            </tr>
+            <tr>
+                <td><input name="btnOne" type="Button"
+                           value="1" onclick="NumPressed(1)"></td>
+                <td><input name="btnTwo" type="Button"
+                           value="2" onclick="NumPressed(2)"></td>
+                <td><input name="btnThree" type="Button"
+                           value="3" onclick="NumPressed(3)"></td>
+                <td><input name="btnPercent" type="Button"
+                           value="%" onclick="Percent()"/></td>
+                <td><input name="btnKoren" type="Button"
+                           value="^2" onclick="Operation('^2')"/></td>
+            </tr>
+            <tr>
+                <td><input name="btnZero" type="Button"
+                           value="0" onclick="NumPressed(0)"></td>
+                <td><input name="btnDecimal" type="Button"
+                           value="." onclick="Decimal()"></td>
+                <td><input name="btnNeg" type="button"
+                           value="+/-" onclick="Neg()"/></td>
+                <td colspan="2"><input id="btnWide" name="btnEquals"
+                                       type="Button" value="=" onclick="Operation('=')"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<br>
+
+<br><br>
+<br><br>
+<br>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+<script src="js/calc2.js"></script>
+
 <footer>
     <div class="navbar-footer navbar-inverse">
         <ul class="nav navbar-nav">
