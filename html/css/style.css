@@ -1,35 +1,54 @@
-.item {
-    height: 250px;
+
+
+.body{
+background-color: red;
 }
-.carousel-slide {
-    height: 300px ;
+
+.carousel-inner {
+    height: 500px;
 
 }
-.aside-bar{
-    width: 200px ;
+
+.item {
+    height: 400px;
 }
-.navbar-footer{
+
+.carousel-slide {
+    height: 400px;
+
+}
+
+.aside-bar {
+    width: 200px;
+}
+
+.navbar-footer {
     height: 51px;
 
 }
-.tblCalc{
-    border:2px solid gray;
-    margin:0;
-    padding:0;
-    width:250px;
-    text-align:center;
+
+
+
+.tblCalc {
+    border: 2px solid blueviolet;
+    margin-left: 100px;
+    padding: 0;
+    width: 250px;
+    text-align: center;
     border-radius: 2px;
 
 }
-.tblCalc input{
-    border:1px solid deepskyblue;
-    border-style: outset;
-    width:30px;
-    margin:4px;
+
+.tblCalc input {
+
+    width: 30px;
+    margin: 4px;
     border-radius: 3px;
 }
-#btnWide{
-    width:80px;
+
+#btnWide {
+    width: 80px;
 }
-#editWide{
-    width:250px;
+
+#editWide {
+    width: 250px;
